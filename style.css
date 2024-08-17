@@ -1,4 +1,4 @@
-@media (min-width: 481px) {
+@media (min-width: 1201px) {
 header{
     
     text-align: center; 
@@ -9,33 +9,37 @@ header{
     border-radius: 20px;
     position: relative;
     top: -70px;
+    padding: 0 60px;
 }
-h1{
+h1{ 
+    display: inline-block;
     font-family: "UnifrakturMaguntia", cursive;
 }
-.menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 50px;
-    margin: 70px;
-    margin-top: -80px;
-    height: 10px;
-}
-a{
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-    margin-top: 10px;
-    text-shadow: 5px 1px 3px #000000;
-    background-color: rgb(116, 66, 1);
-}
-a.hover{
-    color: black;
-    text-decoration: none;
-}
+
 body{
     background-image: url("./images/bg.jpg");
     background-repeat: 2;
     background-size: cover;
+}
+.dropbtn,img{
+    height: 0px;
+    opacity: 0%;
+}
+.dropdown-content{
+    position: relative;
+    top: -140px;
+    background-color: rgb(255, 106, 42);
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+}
+.dropdown-content>a{
+    position: relative;
+    font-size: 30px;
+    grid-column: span 1;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #000000;
+    color: whitesmoke;
 }
 }
