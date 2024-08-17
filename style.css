@@ -1,0 +1,107 @@
+@media (min-width:481px){
+body{
+    background-image: url("./images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    color: #ffffff;
+    font-family: "Sedan", serif;
+    text-shadow: 5px 5px #000000;
+    font-size: 35px;
+    text-align: center;
+}
+h1{
+    display: inline-block;
+    background-color: #608393;
+    padding: 0 10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dropbtn>img{
+    position: relative;
+    width: 70px;
+    top: 10px;
+}
+
+.dropdown-content {
+    font-size: 15px;
+    text-shadow: 0px 0px 0px #000000;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.trending{
+    background-color: #84b0c4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 0px 40px;
+}
+img{
+    width: 100%;
+}
+.left{
+    grid-column: span 3;
+}
+.left h2{
+    font-size: 30px;
+}
+.left p{
+    font-size: 20px;
+}
+.left> div{
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.right>p{
+    text-align: justify;
+    font-size: 20px;
+}
+.right{
+    grid-column: span 2;
+}
+.right> div{
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+}
+.right>h2{
+    text-align: left;
+    font-size: 30px;
+}
+
+
+}
