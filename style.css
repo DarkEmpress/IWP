@@ -1,8 +1,9 @@
 @media (min-width:481px){
 body{
-    background-image: url("./images/bg.png");
+    background-image: url("./images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100%;
 }
 header{
     color: #ffffff;
