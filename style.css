@@ -1,16 +1,14 @@
-@media (max-width:1600px) and (min-width: 1201px) {
+@media (min-width: 481px) {
 header{
     
     text-align: center; 
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-top: 80px;
-    height: 160px;
-    color: rgb(246, 227, 207);
-    text-shadow: 7px 2px 4px #572300;
-
+    color: rgb(255, 98, 0);
+    text-shadow: 7px 2px 4px #000000;
+    border-radius: 20px;
+    position: relative;
+    top: -70px;
 }
 h1{
     font-family: "UnifrakturMaguntia", cursive;
@@ -37,50 +35,7 @@ a.hover{
 }
 body{
     background-image: url("./images/bg.jpg");
-    background-repeat: no-repeat;
+    background-repeat: 2;
     background-size: cover;
-}
-.body{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-.scroll{
-    display: inline-block;
-    grid-column: span 8;
-}
-.centre{
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(to bottom, #391a00, #682100 50%, #391a00);
-}
-.left{
-    float: left;
-    width: 20px;
-    height: 40px;
-    background-color: #2b1100;
-}
-.right{
-    float: right;
-    width: 20px;
-    height: 40px;
-    margin-top: -40px;
-    background-color: #2b1100;
-}
-.Content{
-    width: 96%;
-    margin: 0 2%;
-    background-color: #e9ceb0;
-}
-.text{
-    background-image: url("./images/vinetage.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Pinyon Script", cursive;
-    font-size: 30px;
-    padding: 20px 30px;
-    text-align: justify;
-    color: #2b1100;
-    text-shadow: 2px 1px 5px #310101;
 }
 }
