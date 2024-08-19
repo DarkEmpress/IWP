@@ -4,7 +4,7 @@ header{
     text-align: center; 
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(255, 98, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 7px 2px 4px #000000;
     border-radius: 20px;
     position: relative;
@@ -17,21 +17,23 @@ h1{
 }
 
 body{
-    background-image: url("./images/bg.jpg");
-    background-repeat: 2;
-    background-size: cover;
+    background-image: url("./images/bg4.jpg");   
 }
-.dropbtn,img{
+.dropdown{
+    height: 1px;
+}
+.dropbtn,.dropbtn>img{
     height: 0px;
     opacity: 0%;
 }
 .dropdown-content{
     position: relative;
     top: -140px;
-    background-color: rgb(255, 106, 42);
+    background-color: #2a3f51;
+    opacity: 70%;
     font-size: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
 }
 .dropdown-content>a{
@@ -41,5 +43,70 @@ body{
     text-decoration: none;
     text-shadow: 0px 0px 0px #000000;
     color: whitesmoke;
+}
+.hot{
+    position: relative;
+    top: -70px;
+    background-color: rgb(164, 1, 1);
+    margin: 0px 60px;
+}
+.hot> h3{
+    display: inline-block;
+    margin: 5px 15px;
+    color: aliceblue;
+}
+.Content{
+    position: relative;
+    top:-50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0 10px;
+    background-color: #ccb28f;
+    margin: 0 60px;
+    border-radius: 10px;
+}
+.Content img,iframe{
+    width: 100%;
+}
+.Content div>div{
+    background-color: #e9d8b8;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.secondary{
+    grid-column: span 2;
+}
+.Main{
+    grid-column: span 4;
+}
+.headlines{
+    grid-column: span 2;
+}
+
+input[type="text"], input[type="submit"] {
+    width:20px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+.crossword{
+    justify-content: center;
+    align-items: center;
+}
+.clues{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 15px;
+}
+
+footer{
+    background-color: #2a3f51;
+    opacity: 70%;
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: right;
+    padding: 5px 30px;
+
 }
 }
