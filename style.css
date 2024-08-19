@@ -1,86 +1,112 @@
-@media (max-width:1600px) and (min-width: 1201px) {
+@media (min-width: 1201px) {
 header{
     
     text-align: center; 
     font-size: 60px;
     font-family: 'Times New Roman', Times, serif;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-top: 80px;
-    height: 160px;
-    color: rgb(246, 227, 207);
-    text-shadow: 7px 2px 4px #572300;
-
+    color: rgb(255, 255, 255);
+    text-shadow: 7px 2px 4px #000000;
+    border-radius: 20px;
+    position: relative;
+    top: -70px;
+    padding: 0 60px;
 }
-h1{
+h1{ 
+    display: inline-block;
     font-family: "UnifrakturMaguntia", cursive;
 }
-.menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 50px;
-    margin: 70px;
-    margin-top: -80px;
-    height: 10px;
-}
-a{
-    font-size: 30px;
-    text-decoration: none;
-    color: white;
-    margin-top: 10px;
-    text-shadow: 5px 1px 3px #000000;
-    background-color: rgb(116, 66, 1);
-}
-a.hover{
-    color: black;
-    text-decoration: none;
-}
+
 body{
-    background-image: url("./images/bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("./images/bg4.jpg");   
 }
-.body{
-    margin-top: 30px;
+.dropdown{
+    height: 1px;
+}
+.dropbtn,.dropbtn>img{
+    height: 0px;
+    opacity: 0%;
+}
+.dropdown-content{
+    position: relative;
+    top: -140px;
+    background-color: #2a3f51;
+    opacity: 70%;
+    font-size: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
-.scroll{
+.dropdown-content>a{
+    position: relative;
+    font-size: 30px;
+    grid-column: span 1;
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #000000;
+    color: whitesmoke;
+}
+.hot{
+    position: relative;
+    top: -70px;
+    background-color: rgb(164, 1, 1);
+    margin: 0px 60px;
+}
+.hot> h3{
     display: inline-block;
-    grid-column: span 8;
-}
-.centre{
-    width: 100%;
-    height: 40px;
-    background: linear-gradient(to bottom, #391a00, #682100 50%, #391a00);
-}
-.left{
-    float: left;
-    width: 20px;
-    height: 40px;
-    background-color: #2b1100;
-}
-.right{
-    float: right;
-    width: 20px;
-    height: 40px;
-    margin-top: -40px;
-    background-color: #2b1100;
+    margin: 5px 15px;
+    color: aliceblue;
 }
 .Content{
-    width: 96%;
-    margin: 0 2%;
-    background-color: #e9ceb0;
+    position: relative;
+    top:-50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0 10px;
+    background-color: #ccb28f;
+    margin: 0 60px;
+    border-radius: 10px;
 }
-.text{
-    background-image: url("./images/vinetage.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Pinyon Script", cursive;
-    font-size: 30px;
-    padding: 20px 30px;
-    text-align: justify;
-    color: #2b1100;
-    text-shadow: 2px 1px 5px #310101;
+.Content img,iframe{
+    width: 100%;
+}
+.Content div>div{
+    background-color: #e9d8b8;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.secondary{
+    grid-column: span 2;
+}
+.Main{
+    grid-column: span 4;
+}
+.headlines{
+    grid-column: span 2;
+}
+
+input[type="text"], input[type="submit"] {
+    width:20px;
+    padding: 1px;
+    box-sizing: border-box;
+}
+.crossword{
+    justify-content: center;
+    align-items: center;
+}
+.clues{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 15px;
+}
+
+footer{
+    background-color: #2a3f51;
+    opacity: 70%;
+    color: aliceblue;
+    border-radius: 10px;
+    text-align: right;
+    padding: 5px 30px;
+
 }
 }
